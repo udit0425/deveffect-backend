@@ -5,6 +5,7 @@ import Home from "./components/Home.jsx";
 import Journal from "./components/Journal.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
+import Footer from './components/Footer.jsx';
 // import Form from './components/Form.jsx';
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }
