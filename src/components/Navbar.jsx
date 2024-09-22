@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
@@ -7,7 +8,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-custom">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">The Deveffect</a>
+        <Link className="navbar-brand" to="/">The Deveffect</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,13 +23,13 @@ export default function Navbar() {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/journal">Journal</a>
+              <Link className="nav-link" to="/journal">Journal</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="about">About</a>
+              <Link className="nav-link" to="about">About</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">Contact</a>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
